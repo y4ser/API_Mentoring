@@ -5,15 +5,14 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
 
-public class ReqresBaseUrl {
+public class PetStoreBaseUrl {
 
     protected RequestSpecification spec;
 
     @BeforeMethod
     public void setSpec() {
         spec = new RequestSpecBuilder()
-                .setBaseUri("https://reqres.in")
-                .addHeader("x-api-key", "reqres-free-v1")
+                .setBaseUri("https://petstore.swagger.io")
                 .setContentType(ContentType.JSON)
                 .build();
     }
