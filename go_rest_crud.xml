@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GoRest Crud Test Suite">
+    <test verbose="2" preserve-order="true" name="GoRest Crud">
+        <classes>
+            <class name="tests.gorest_crud.R01_GetAllUsers"> </class>
+            <class name="tests.gorest_crud.R02_CreateUser"> </class>
+            <class name="tests.gorest_crud.R03_GetUser"> </class>
+            <class name="tests.gorest_crud.R04_UpdateUser"> </class>
+            <class name="tests.gorest_crud.R05_PartialUpdateUser"> </class>
+            <class name="tests.gorest_crud.R06_DeleteUser"> </class>
+            <class name="tests.gorest_crud.R07_GetUserNegative"> </class>
+        </classes>
+    </test>
+</suite>
